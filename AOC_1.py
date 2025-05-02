@@ -33,11 +33,8 @@ def sort_int(num_list):
                 num_list[j], num_list[j + 1] = num_list[j + 1], num_list[j]
     return(num_list)
 
-ord_left = sort_int(left)
-ord_right = sort_int(right)
-
 #zip them together to make tuples as "pairs"
-paired_nums =  [num for num in zip(ord_left, ord_right)]
+paired_nums =  [num for num in zip(sort_int(left), sort_int(right))]
 print(paired_nums)
 
 #make a dictionary of the paired numbers and their differences as the problem refers to them "distances"
