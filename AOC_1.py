@@ -38,13 +38,14 @@ paired_nums =  [num for num in zip(sort_int(left), sort_int(right))]
 print(paired_nums)
 
 #make a dictionary of the paired numbers and their differences as the problem refers to them "distances"
-diff_dict = {}
-for pair in paired_nums:
-    num_dist = pair[0] - pair[1]
-    if pair[0] < pair[1]:
-        num_dist = pair[1] - pair[0]
-    diff_dict[pair] = num_dist
-print(diff_dict)
+def get_distance(paired_nums):
+    diff_dict = {}
+    for pair in paired_nums:
+        num_dist = pair[0] - pair[1]
+        if pair[0] < pair[1]:
+            num_dist = pair[1] - pair[0]
+        diff_dict[pair] = num_dist
+    return diff_dict 
 
 #take the sum of the values of "distances" of the pairs
 dist_sum = sum([diff_dict[key] for key in diff_dict])
