@@ -9,7 +9,7 @@ with open(file, "r") as file:
 #tomorrow gonna have to annotate this so that I can use it later
 
 def get_diff_matrix(data):
-    # for reading purposed I stored the len of the rows and cols into vars
+    # for reading purposes I stored the len of the rows and cols into vars
     row_idx = len(data)
     col_idx = len(data[0])
     #set up diff matrix

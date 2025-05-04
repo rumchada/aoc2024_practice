@@ -45,7 +45,10 @@ def get_distance(paired_nums):
         if pair[0] < pair[1]:
             num_dist = pair[1] - pair[0]
         diff_dict[pair] = num_dist
-    return diff_dict 
+    return diff_dict
+print(get_distance(paired_nums))
+
+diff_dict = get_distance(paired_nums)
 
 #take the sum of the values of "distances" of the pairs
 dist_sum = sum([diff_dict[key] for key in diff_dict])
