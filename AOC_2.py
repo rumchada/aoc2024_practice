@@ -9,11 +9,16 @@ with open(file, "r") as file:
 #tomorrow gonna have to annotate this so that I can use i later
 
 def get_diff_matrix(data):
+    # for reading purposed I stored the len of the rows and cols into vars
     row_idx = len(data)
     col_idx = len(data[0])
+    #set up diff matrix
     diff_matrix = []
+    # iterating through each of the rows
     for row in range(row_idx):
-        #converting each row in an integer
+        #converting each row into an integer
+        # for each entry in the row convert to in an integer
+        # Set up a the row differences list
         data[row] = [int(x) for x in data[row]]
         row_diffs = []
         for j in range(col_idx - 1):
