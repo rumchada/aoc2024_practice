@@ -4,9 +4,9 @@ with open(file, "r") as file:
     for line in file:
         report = list(line.rstrip("\n").replace(' ',""))
         data.append(report)
-# one day we can build this out generate a 2d list using numy
+# one day we can build this out generate a 2d list using numpy
 
-#tomorrow gonna have to annotate this so that I can use i later
+#tomorrow gonna have to annotate this so that I can use it later
 
 def get_diff_matrix(data):
     # for reading purposed I stored the len of the rows and cols into vars
